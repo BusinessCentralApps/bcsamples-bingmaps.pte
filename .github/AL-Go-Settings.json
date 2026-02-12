@@ -17,36 +17,45 @@
   "templateSha": "8fedaa0bba2cf96f8b2b0c57b7d4ba88e9c7069b",
   "conditionalSettings": [
     {
-        "workflows": [ "Update AL-Go System Files" ],
-        "settings": {
-            "workflowSchedule": {
-                "cron": "0 0 * * *"
-            }
+      "workflows": [
+        "Update AL-Go System Files"
+      ],
+      "settings": {
+        "workflowSchedule": {
+          "cron": "0 0 * * *"
         }
+      }
     },
     {
-        "workflows": [ "Test Current" ],
-        "settings": {
-            "workflowSchedule": {
-                "cron": "0 2 * * 1,2,3,4,5"
-            }
+      "workflows": [
+        "Test Current"
+      ],
+      "settings": {
+        "workflowSchedule": {
+          "cron": "0 2 * * 1,2,3,4,5"
         }
+      }
     },
     {
-        "workflows": [ "Test Next Major" ],
-        "settings": {
-            "workflowSchedule": {
-                "cron": "0 2 * * 6"
-            }
+      "workflows": [
+        "Test Next Major"
+      ],
+      "settings": {
+        "workflowSchedule": {
+          "cron": "0 2 * * 6"
         }
+      }
     },
     {
-        "workflows": [ "Test Next Minor" ],
-        "settings": {
-            "workflowSchedule": {
-                "cron": "0 2 * * 6"
-            }
+      "workflows": [
+        "Test Next Minor"
+      ],
+      "settings": {
+        "workflowSchedule": {
+          "cron": "0 2 * * 6"
         }
+      }
     }
-]
+  ],
+  "PullRequestTrigger": "pull_request"
 }
